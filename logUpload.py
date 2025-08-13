@@ -40,7 +40,7 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 print("started")
 
-LOG_FILE = "C:\\Users\\praju\\OneDrive\\Desktop\\Avensis\\server_incidents.log"
+LOG_FILE = "C:\\Users\\pathToYourLogFile\\server_incidents.log"
 def parse_and_store(buffer):
     data = {}
     log_line = None  # Capture the log value for Gradio
@@ -106,3 +106,4 @@ def follow_log():
 
 if __name__ == "__main__":
     follow_log()
+
